@@ -7,17 +7,17 @@
 5. Click on create and continue.
 
 ## HOW TO ADD ROWS IN DOCTYPE
-1.Go to fields Section and click on add row.
-2.Select Label, type and check mandatory field as per requirement
-3.Under Options: Date/Email/Phone can be inserted to add date/email/phone respectively.
-4.For additional functionalities, right click on numbers under No column and a ddialog box opens 
+1. Go to fields Section and click on add row.
+2. Select Label, type and check mandatory field as per requirement
+3. Under Options: Date/Email/Phone can be inserted to add date/email/phone respectively.
+4. For additional functionalities, right click on numbers under No column and a ddialog box opens 
 with more features and functions.
 
 ### NAMING OF ENTRIES:
 Various Options to name the entries:
-1.field:[fieldname] - By Field
-2.autoincrement - Uses Databases' Auto Increment features
-3.[series] - Series by prefix (separated by a dot); for example PRE.####
+1. field:[fieldname] - By Field
+2. autoincrement - Uses Databases' Auto Increment features
+3. [series] - Series by prefix (separated by a dot); for example PRE.####
 
 ### PERMISSION RULES
 Under this tab, different permissions are given to different roles. By default,System Manager is set.
