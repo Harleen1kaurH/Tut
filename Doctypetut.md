@@ -1,12 +1,12 @@
 # DOCTYPES
-## HOW TO CREATE A DOCTYPE
+## HOW TO CREATE A DOCTYPE?
 1. Login to Frappe Framework
 2. Go to build section and click on doctype option in modules section
 3. Click on create a doctype.(The doctype may be created in already existing module or a new module can be created).
 4. Specify the name of doctype and its module
 5. Click on create and continue.
 
-## HOW TO ADD ROWS IN DOCTYPE
+## HOW TO ADD ROWS IN DOCTYPE?
 1. Go to fields Section and click on add row.
 2. Select Label, type and check mandatory field as per requirement
 3. Under Options: Date/Email/Phone can be inserted to add date/email/phone respectively.
@@ -28,12 +28,12 @@ permissions.
 By checking this quickentry checkbutton, while adding entries, Interface will demand input of mandatory fields only at first.One can enter all the fields(mandatory as well as non
 mandatory but at first if the quickentry box is checked, prompt will ask for input of mandatory fields only).
 
-### ADDING ENTRIES IN DOCTYPE
+## HOW TO ADD VALUES IN FIELDS IN DOCTYPE?
 1. Click on go to doctype list.
 2. New tab appears. Click on "create your first doctype_name".
 3. Write the entries into respective field and click on save. 
 
 ## VARIOUS FEATURES OF DOCTYPE
-### 1.IS SUBMITTABLE
-### 2. IS CHILD TABLE
-### 3. IS SINGLE
+#### 1.IS SUBMITTABLE
+#### 2. IS CHILD TABLE
+#### 3. IS SINGLE
