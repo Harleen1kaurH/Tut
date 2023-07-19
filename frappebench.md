@@ -41,15 +41,14 @@ sudo apt-get install python3-dev python3.10-dev python3-setuptools python3-pip p
 #### Install Python Virtual Environment
 sudo apt-get install python3.10-venv
 
- #### Install Software Properties Common (for repository management) 
+#### Install Software Properties Common (for repository management) 
  sudo apt-get install software-properties-common
 
- #### Install MariaDB (MySQL server) 
+#### Install MariaDB (MySQL server) 
  sudo apt install mariadb-server mariadb-client
 
- #### Install Redis Server 
+#### Install Redis Server 
  sudo apt-get install redis-server
-
  ### CONFIGURE MYSQL SERVER 
  $ sudo mysql_secure_installation
  1. Enter current password for root: (Enter your SSH root user password)
@@ -63,7 +62,7 @@ sudo apt-get install python3.10-venv
  9. Remove test database and access to it? [Y/n]: Y
  10. Reload privilege tables now? [Y/n]: Y
 
- #### Edit the MySQL default config file
+#### Edit the MySQL default config file
 sudo vim /etc/mysql/my.cnf
 
 Add the below code block at the bottom of the file;
@@ -75,7 +74,6 @@ collation-server = utf8mb4_unicode_ci
 
 [mysql]
 default-character-set = utf8mb4
-
 
 #### Restarting MYSQL Server<br>
 sudo service mysql restart
