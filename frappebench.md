@@ -35,19 +35,19 @@ cd /home/[frappe-user]/
 #### To install git
 sudo apt-get install git
 
-#### Install Python
+#### Install Python <br>
 sudo apt-get install python3-dev python3.10-dev python3-setuptools python3-pip python3-distutils
 
-####  Install Python Virtual Environment
+####  Install Python Virtual Environment<br>
 sudo apt-get install python3.10-venv
 
- #### Install Software Properties Common (for repository management)
+ #### Install Software Properties Common (for repository management)<br>
  sudo apt-get install software-properties-common
 
- #### Install MariaDB (MySQL server)
+ #### Install MariaDB (MySQL server) <br>
  sudo apt install mariadb-server mariadb-client
 
- #### Install Redis Server
+ #### Install Redis Server <br>
  sudo apt-get install redis-server
 
  ### CONFIGURE MYSQL SERVER <br>
