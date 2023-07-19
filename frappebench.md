@@ -38,10 +38,10 @@ sudo apt-get install git
 #### Install Python <br>
 sudo apt-get install python3-dev python3.10-dev python3-setuptools python3-pip python3-distutils
 
-####  Install Python Virtual Environment<br>
+####  Install Python Virtual Environment <br>
 sudo apt-get install python3.10-venv
 
- #### Install Software Properties Common (for repository management)<br>
+ #### Install Software Properties Common (for repository management) <br>
  sudo apt-get install software-properties-common
 
  #### Install MariaDB (MySQL server) <br>
