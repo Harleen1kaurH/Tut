@@ -50,7 +50,7 @@ sudo apt-get install python3.10-venv
  #### Install Redis Server
  sudo apt-get install redis-server
 
- ### CONFIGURE MYSQL SERVER
+ ### CONFIGURE MYSQL SERVER <br>
  $ sudo mysql_secure_installation
  1. Enter current password for root: (Enter your SSH root user password)
  2. Switch to unix_socket authentication [Y/n]: Y
@@ -63,7 +63,7 @@ sudo apt-get install python3.10-venv
  9. Remove test database and access to it? [Y/n]: Y
  10. Reload privilege tables now? [Y/n]: Y
 
- #### Edit the MySQL default config file
+ #### Edit the MySQL default config file<br>
 sudo vim /etc/mysql/my.cnf
 
 Add the below code block at the bottom of the file;
@@ -77,10 +77,10 @@ collation-server = utf8mb4_unicode_ci
 default-character-set = utf8mb4
 
 
-#### Restarting MYSQL Server
+#### Restarting MYSQL Server<br>
 sudo service mysql restart
 
-### INSTALL CURL, Node, NPM and Yarn
+### INSTALL CURL, Node, NPM and Yarn<br>
 
 #### Install CURL <BR>
 sudo apt install curl
