@@ -35,22 +35,22 @@ cd /home/[frappe-user]/
 #### To install git
 sudo apt-get install git
 
-#### Install Python <br>
+#### Install Python 
 sudo apt-get install python3-dev python3.10-dev python3-setuptools python3-pip python3-distutils
 
-####  Install Python Virtual Environment <br>
+#### Install Python Virtual Environment
 sudo apt-get install python3.10-venv
 
- #### Install Software Properties Common (for repository management) <br>
+ #### Install Software Properties Common (for repository management) 
  sudo apt-get install software-properties-common
 
- #### Install MariaDB (MySQL server) <br>
+ #### Install MariaDB (MySQL server) 
  sudo apt install mariadb-server mariadb-client
 
- #### Install Redis Server <br>
+ #### Install Redis Server 
  sudo apt-get install redis-server
 
- ### CONFIGURE MYSQL SERVER <br>
+ ### CONFIGURE MYSQL SERVER 
  $ sudo mysql_secure_installation
  1. Enter current password for root: (Enter your SSH root user password)
  2. Switch to unix_socket authentication [Y/n]: Y
@@ -63,7 +63,7 @@ sudo apt-get install python3.10-venv
  9. Remove test database and access to it? [Y/n]: Y
  10. Reload privilege tables now? [Y/n]: Y
 
- #### Edit the MySQL default config file<br>
+ #### Edit the MySQL default config file
 sudo vim /etc/mysql/my.cnf
 
 Add the below code block at the bottom of the file;
