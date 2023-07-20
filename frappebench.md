@@ -64,7 +64,9 @@ sudo apt-get install python3.10-venv
 
 #### Edit the MySQL default config file
 sudo vim /etc/mysql/my.cnf
-
+*if VIM file is not installed then:*
+$sudo apt install vim
+<br>
 Add the below code block at the bottom of the file;
 
 [mysqld]
