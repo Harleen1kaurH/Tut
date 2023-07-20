@@ -63,7 +63,7 @@ sudo apt-get install python3.10-venv
  10. Reload privilege tables now? [Y/n]: Y
 
 #### Edit the MySQL default config file
-sudo vim /etc/mysql/my.cnf
+sudo vim /etc/mysql/my.cnf<br>
 *if VIM file is not installed then:*
 $sudo apt install vim
 <br>
