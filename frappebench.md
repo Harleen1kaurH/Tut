@@ -26,7 +26,7 @@ $usermod -aG sudo [frappe-user]  /// The command is used to grant administrative
 ##### To give access/permission to newly built user:
 1. Open new terminal with root user (or user which has access of sudoers file) and use 'visudo' command to edit sudoers file
 2. Once you are inside sudoers file add:<br>
-[frappe-username] ALL=(All:ALL) ALL
+[frappe-username] ALL=(ALL:ALL) ALL
 3. Save changes and come back to sudo user terminal and you are ready to continue.
 
 NEXT COMMNDS:<br>
