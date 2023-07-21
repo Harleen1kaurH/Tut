@@ -68,7 +68,7 @@ sudo apt-get install python3.10-venv ///This command will download and install t
 #### Edit the MySQL default config file
 sudo vim /etc/mysql/my.cnf<br>
 *if VIM file is not installed then:*
-$sudo apt install vim
+$sudo apt install vim ///Vim is an editor to create or edit a text file
 <br>
 Add the below code block at the bottom of the file;
 
@@ -86,18 +86,19 @@ sudo service mysql restart
 ### INSTALL CURL, Node, NPM and Yarn<br>
 
 #### Install CURL <BR>
-sudo apt install curl
+sudo apt install curl ///Curl" is a command-line tool and a library used in various programming languages to transfer data to or from a server
 
 #### Install Node <BR>
+///open-source, server-side runtime environment built on Chrome's V8 JavaScript engine <br>
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash<BR>
 source ~/.profile <BR>
 nvm install 16.15.0
 
 #### Install NPM <BR>
-sudo apt-get install npm
+sudo apt-get install npm ///"NPM" stands for "Node Package Manager".It is used to install, manage, and share reusable JavaScript code packages.
 
 #### Install Yarn <BR>
-sudo npm install -g yarn 
+sudo npm install -g yarn ///. Like NPM, Yarn is used to manage JavaScript packages.
 
 ### FRAPPE BENCH
 
@@ -111,7 +112,7 @@ bench init --frappe-branch version-14 frappe-bench
 cd frappe-bench/
 
 ####  Change user directory permissions
-chmod -R o+rx /home/[frappe-user]/
+chmod -R o+rx /home/[frappe-user]/   ///o+rx adds read and execute permissions for others
 
 #### Create a new site for installation of other apps
 bench new-site site1.local
