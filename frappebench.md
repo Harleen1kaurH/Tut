@@ -20,7 +20,7 @@ sudo apt-get upgrade -y
 
 #### Create new user
 $sudo adduser [frappe-user] <BR>
-$usermod -aG sudo [frappe-user]  /// The command is used to grant administrative privileges to the specified user, allowing them to run commands with elevated permissions by accessing sudo file. <br>
+$usermod -aG sudo [frappe-user]   // The command is used to grant administrative privileges to the specified user, allowing them to run commands with elevated permissions by accessing sudo file. <br>
 
 *If permission to access sudoers file is denied*
 ##### To give access/permission to newly built user:
@@ -31,20 +31,20 @@ $usermod -aG sudo [frappe-user]  /// The command is used to grant administrative
 
 NEXT COMMNDS:<br>
 su [frappe-user] ///switching user <BR>
-cd /home/[frappe-user]/      ///changing directory 
+cd /home/[frappe-user]/      //changing directory 
 
 ### INSTALL REQUIRED PACKAGES
 #### To install git
-sudo apt-get install git ///apt-get is packager manager used.
+sudo apt-get install git    //apt-get is packager manager used.
 
 #### Install Python 
 sudo apt-get install python3-dev python3.10-dev python3-setuptools python3-pip python3-distutils
 
 #### Install Python Virtual Environment
-sudo apt-get install python3.10-venv ///This command will download and install the Python 3.10 virtual environment package, which allows you to create isolated Python environments to manage project dependencies.The sudo command allows regular users to perform tasks that are typically reserved for the system administrator (root user) 
+sudo apt-get install python3.10-venv   //This command will download and install the Python 3.10 virtual environment package, which allows you to create isolated Python environments to manage project dependencies.The sudo command allows regular users to perform tasks that are typically reserved for the system administrator (root user) 
 
 #### Install Software Properties Common (for repository management) 
- sudo apt-get install software-properties-common ///It is used to install the "software-properties-common" package on Debian-based Linux distributions, such as Ubuntu. This package contains various utilities that make it easier to manage software repositories and perform related tasks.
+ sudo apt-get install software-properties-common   //It is used to install the "software-properties-common" package on Debian-based Linux distributions, such as Ubuntu. This package contains various utilities that make it easier to manage software repositories and perform related tasks.
 
 #### Install MariaDB (MySQL server) 
  sudo apt install mariadb-server mariadb-client
@@ -68,7 +68,7 @@ sudo apt-get install python3.10-venv ///This command will download and install t
 #### Edit the MySQL default config file
 sudo vim /etc/mysql/my.cnf<br>
 *if VIM file is not installed then:*
-$sudo apt install vim ///Vim is an editor to create or edit a text file
+$sudo apt install vim       //Vim is an editor to create or edit a text file
 <br>
 Add the below code block at the bottom of the file;
 
@@ -86,19 +86,19 @@ sudo service mysql restart
 ### INSTALL CURL, Node, NPM and Yarn<br>
 
 #### Install CURL <BR>
-sudo apt install curl ///Curl" is a command-line tool and a library used in various programming languages to transfer data to or from a server
+sudo apt install curl        //Curl" is a command-line tool and a library used in various programming languages to transfer data to or from a server
 
 #### Install Node <BR>
-///open-source, server-side runtime environment built on Chrome's V8 JavaScript engine <br>
+//open-source, server-side runtime environment built on Chrome's V8 JavaScript engine <br>
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash<BR>
 source ~/.profile <BR>
 nvm install 16.15.0
 
 #### Install NPM <BR>
-sudo apt-get install npm ///"NPM" stands for "Node Package Manager".It is used to install, manage, and share reusable JavaScript code packages.
+sudo apt-get install npm        //"NPM" stands for "Node Package Manager".It is used to install, manage, and share reusable JavaScript code packages.
 
 #### Install Yarn <BR>
-sudo npm install -g yarn ///. Like NPM, Yarn is used to manage JavaScript packages.
+sudo npm install -g yarn       // Like NPM, Yarn is used to manage JavaScript packages.
 
 ### FRAPPE BENCH
 
@@ -112,7 +112,7 @@ bench init --frappe-branch version-14 frappe-bench
 cd frappe-bench/
 
 ####  Change user directory permissions
-chmod -R o+rx /home/[frappe-user]/   ///o+rx adds read and execute permissions for others
+chmod -R o+rx /home/[frappe-user]/             //o+rx adds read and execute permissions for others
 
 #### Create a new site for installation of other apps
 bench new-site site1.local
