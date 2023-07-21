@@ -5,20 +5,22 @@
 2. Database: MariaDB and SQL databases
 3. Version Control: Git
 4. User Interface: HTML
-5. Jinja Templating
-6. Javascript/JQuery
+5. Jinja Templating: used to generate any markup as well as source code
+6. Javascript/JQuery: JQuery is library in Javascript. It is used to provide an easy way to use javascript on your website to make it more attractive.
 
 ## STEPS OF INSTALLATION 
+Ensure that you are on macbook/linux OS.
 
 ### SERVER SETUP <BR>
 Login to the server as root user.
+
 #### To Update & upgrade server packages
 sudo apt-get update -y <BR>
 sudo apt-get upgrade -y
 
 #### Create new user
-sudo adduser [frappe-user] <BR>
-usermod -aG sudo [frappe-user]
+$sudo adduser [frappe-user] <BR>
+$usermod -aG sudo [frappe-user]  /// The command is used to grant administrative privileges to the specified user, allowing them to run commands with elevated permissions by accessing sudo file. <br>
 
 *If permission to access sudoers file is denied*
 ##### To give access/permission to newly built user:
@@ -28,28 +30,29 @@ usermod -aG sudo [frappe-user]
 3. Save changes and come back to sudo user terminal and you are ready to continue.
 
 NEXT COMMNDS:<br>
-su [frappe-user] <BR> 
-cd /home/[frappe-user]/
+su [frappe-user] ///switching user <BR>
+cd /home/[frappe-user]/      ///changing directory 
 
 ### INSTALL REQUIRED PACKAGES
 #### To install git
-sudo apt-get install git
+sudo apt-get install git ///apt-get is packager manager used.
 
 #### Install Python 
 sudo apt-get install python3-dev python3.10-dev python3-setuptools python3-pip python3-distutils
 
 #### Install Python Virtual Environment
-sudo apt-get install python3.10-venv
+sudo apt-get install python3.10-venv ///This command will download and install the Python 3.10 virtual environment package, which allows you to create isolated Python environments to manage project dependencies.The sudo command allows regular users to perform tasks that are typically reserved for the system administrator (root user) 
 
 #### Install Software Properties Common (for repository management) 
- sudo apt-get install software-properties-common
+ sudo apt-get install software-properties-common ///It is used to install the "software-properties-common" package on Debian-based Linux distributions, such as Ubuntu. This package contains various utilities that make it easier to manage software repositories and perform related tasks.
 
 #### Install MariaDB (MySQL server) 
  sudo apt install mariadb-server mariadb-client
 
 #### Install Redis Server 
  sudo apt-get install redis-server
- ### CONFIGURE MYSQL SERVER 
+ 
+### CONFIGURE MYSQL SERVER 
  $ sudo mysql_secure_installation
  1. Enter current password for root: (Enter your SSH root user password)
  2. Switch to unix_socket authentication [Y/n]: Y
